@@ -95,7 +95,7 @@ export default class PaginationBoxView extends Component {
   callCallback = (selectedItem) => {
     if (typeof(this.props.clickCallback) !== "undefined" &&
         typeof(this.props.clickCallback) === "function") {
-      this.props.clickCallback({selected: selectedItem});
+      this.props.clickCallback({selected: selectedItem+1});
     }
   };
 
