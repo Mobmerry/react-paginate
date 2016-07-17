@@ -71,7 +71,7 @@ var PaginationBoxView = function (_Component) {
 
     _this.callCallback = function (selectedItem) {
       if (typeof _this.props.clickCallback !== "undefined" && typeof _this.props.clickCallback === "function") {
-        _this.props.clickCallback({ selected: selectedItem });
+        _this.props.clickCallback({ selected: selectedItem + 1 });
       }
     };
 
